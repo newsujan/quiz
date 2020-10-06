@@ -1,0 +1,11 @@
+<nav class="uk-navbar-container" uk-navbar>
+    <div class="uk-navbar-left uk-padding-small">Quiz App</div>
+    <div class="uk-navbar-right uk-padding-small">
+        <a href="" class="uk-margin-medium-right">Home</a>
+        {% if user %}
+            <p>Hello {{ user.name }}</p>
+        {% else %}
+            <a href="/login">Login</a>
+        {% endif %}
+    </div>
+</nav>
