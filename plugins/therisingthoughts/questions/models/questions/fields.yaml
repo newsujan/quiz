@@ -1,0 +1,34 @@
+fields:
+    name:
+        label: 'Question Name'
+        span: auto
+        type: text
+    option:
+        label: Option
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                answer:
+                    label: Answer
+                    prompt: 'Add new item'
+                    span: auto
+                    type: repeater
+                    form:
+                        fields:
+                            ans:
+                                label: answer
+                                span: auto
+                                type: text
+                options:
+                    label: Options
+                    prompt: 'Add new item'
+                    span: auto
+                    type: repeater
+                    form:
+                        fields:
+                            opt:
+                                label: option
+                                span: auto
+                                type: text

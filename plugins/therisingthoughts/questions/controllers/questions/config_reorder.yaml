@@ -1,0 +1,4 @@
+title: Questions
+modelClass: Therisingthoughts\Questions\Models\Questions
+toolbar:
+    buttons: reorder_toolbar

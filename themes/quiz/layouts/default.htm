@@ -40,8 +40,11 @@ security = "all"
 
         <!-- Scripts -->
         <script src="{{ 'assets/bootstrap/js/jquery-3.5.1.slim.min.js'|theme }}"></script>
-        <script src="{{ 'assets/bootstrap/js/bootstrap.min.js'|theme }}"></script>
+        <script src="{{ 'assets/bootstrap/js/jquery.js'|theme }}"></script>
+
         <script src="{{ 'assets/bootstrap/js/popper.min.js'|theme }}"></script>
+        <script src="{{ 'assets/bootstrap/js/bootstrap.min.js'|theme }}"></script>
+        {% framework %}
         {% framework extras %}
         {% scripts %}
 

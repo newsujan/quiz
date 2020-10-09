@@ -5,7 +5,7 @@
         {% if user %}
             <p>Hello {{ user.name }}</p>
         {% else %}
-            <a href="/login">Login</a>
+            <a href="{{ 'login'|page }}">Login</a>
         {% endif %}
     </div>
 </nav>

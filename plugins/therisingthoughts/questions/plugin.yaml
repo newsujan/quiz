@@ -1,0 +1,11 @@
+plugin:
+    name: 'therisingthoughts.questions::lang.plugin.name'
+    description: 'therisingthoughts.questions::lang.plugin.description'
+    author: therisingthoughts
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Questions
+        url: therisingthoughts/questions/questions
+        icon: icon-question

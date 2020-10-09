@@ -1,0 +1,10 @@
+name: Questions
+form: $/therisingthoughts/questions/models/questions/fields.yaml
+modelClass: Therisingthoughts\Questions\Models\Questions
+defaultRedirect: therisingthoughts/questions/questions
+create:
+    redirect: 'therisingthoughts/questions/questions/update/:id'
+    redirectClose: therisingthoughts/questions/questions
+update:
+    redirect: therisingthoughts/questions/questions
+    redirectClose: therisingthoughts/questions/questions
