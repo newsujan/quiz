@@ -1,11 +1,16 @@
 <nav class="uk-navbar-container" uk-navbar>
     <div class="uk-navbar-left uk-padding-small">Quiz App</div>
     <div class="uk-navbar-right uk-padding-small">
-        <a href="" class="uk-margin-medium-right">Home</a>
+        <a href="/" class="uk-margin-medium-right">Home</a>
         {% if user %}
-            <p>Hello {{ user.name }}</p>
+            <p>
+                <a href="/profile">
+                    Hello, {{ user.name }}
+                </a> 
+            </p>
+            <p><a data-request="onLogout" data-request-data="redirect: '/'">Sign Out</a></p>
         {% else %}
-            <a href="{{ 'login'|page }}">Login</a>
+            <a href="{{ 'login'|page }}" data-request-data="redirect: '/'">Login</a>
         {% endif %}
     </div>
 </nav>

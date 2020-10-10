@@ -1,8 +1,25 @@
 fields:
     name:
-        label: 'Question Name'
+        label: Question
+        size: ''
         span: auto
-        type: text
+        type: richeditor
+    answer:
+        label: Answer
+        prompt: 'Add new item'
+        span: auto
+        type: repeater
+        form:
+            fields:
+                ans:
+                    label: Answer
+                    span: full
+                    type: text
+    explanation:
+        label: Explanation
+        size: ''
+        span: auto
+        type: richeditor
     option:
         label: Option
         prompt: 'Add new item'
@@ -10,25 +27,21 @@ fields:
         type: repeater
         form:
             fields:
-                answer:
-                    label: Answer
-                    prompt: 'Add new item'
+                opt:
+                    label: Option
                     span: auto
-                    type: repeater
-                    form:
-                        fields:
-                            ans:
-                                label: answer
-                                span: auto
-                                type: text
-                options:
-                    label: Options
-                    prompt: 'Add new item'
+                    type: text
+                is_multiple:
+                    label: 'Is Answer?'
                     span: auto
-                    type: repeater
-                    form:
-                        fields:
-                            opt:
-                                label: option
-                                span: auto
-                                type: text
+                    type: switch
+    difficulty:
+        label: Difficulty
+        options:
+            easy: Easy
+            medium: Medium
+            hard: Hard
+        showSearch: true
+        span: auto
+        default: medium
+        type: dropdown

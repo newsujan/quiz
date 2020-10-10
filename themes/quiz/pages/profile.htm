@@ -1,0 +1,24 @@
+title = "Profile"
+url = "/profile"
+layout = "default"
+is_hidden = 0
+
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+
+[session]
+security = "all"
+==
+{% if user %}
+
+    {% partial account ~ '::activation_check' %}
+
+    {% partial account ~ '::update' %}
+
+    {% partial account ~ '::deactivate_link' %}
+
+{% else %}
+    You are not logged in
+{% endif %}

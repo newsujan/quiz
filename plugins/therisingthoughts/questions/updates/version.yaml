@@ -3,3 +3,12 @@
 1.0.2:
     - 'Created table therisingthoughts_questions_'
     - builder_table_create_therisingthoughts_questions_.php
+1.0.3:
+    - 'Updated table therisingthoughts_questions_'
+    - builder_table_update_therisingthoughts_questions_.php
+1.0.4:
+    - 'Updated table therisingthoughts_questions_'
+    - builder_table_update_therisingthoughts_questions__2.php
+1.0.5:
+    - 'Updated table therisingthoughts_questions_'
+    - builder_table_update_therisingthoughts_questions__3.php

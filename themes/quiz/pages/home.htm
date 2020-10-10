@@ -2,4 +2,46 @@ title = "Home"
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[builderList]
+modelClass = "Therisingthoughts\Questions\Models\Questions"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
 ==
+<?php
+    
+   function onStart(){
+    echo(rand(1,5));
+   }
+
+
+?>
+==
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+<ul class="record-list">
+    {% for record in records %}
+        <li>
+            {{record}}
+            <br>{{rand}}
+            <p>Question: {{record.name|raw}}</p>
+            {% set count = 1 %}
+            {% for op in record.option %} 
+                {{op.opt}}
+            {% endfor %}
+            {% for an in record.answer %}
+                {{an.ans}}
+            {% endfor %}
+        </li>
+    {% endfor %}
+</ul>

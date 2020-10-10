@@ -4,6 +4,7 @@ layout = "default"
 is_hidden = 0
 
 [account]
+redirect = "home"
 paramCode = "code"
 forceSecure = 0
 requirePassword = 0
@@ -25,13 +26,5 @@ security = "all"
         </div>
 
     </div>
-
-{% else %}
-
-    {% partial account ~ '::activation_check' %}
-
-    {% partial account ~ '::update' %}
-
-    {% partial account ~ '::deactivate_link' %}
 
 {% endif %}

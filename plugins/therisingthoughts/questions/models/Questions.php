@@ -20,4 +20,10 @@ class Questions extends Model
      */
     public $rules = [
     ];
+
+    public $jsonable = [
+        'option',
+        'answer'
+    ];
+
 }
